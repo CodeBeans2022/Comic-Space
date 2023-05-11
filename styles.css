@@ -118,7 +118,7 @@ header {
 
   .section-headings {
     font-size: 6em;
-    margin: 10px;
+    margin: 10px 0;
     text-align: center;
     width: 100%;
   }
@@ -310,8 +310,8 @@ form {
       .about div img {
         height: auto;
         margin: auto;
-        width: 300px;
-        margin: 10px;
+        width: 400px;
+        margin: 10px 0;
         border-radius: 20px;
     }
 
@@ -323,5 +323,28 @@ form {
         width: 100%;
       }
 
+}
+
+@media screen and (max-width: 720px) {
+
+    .dropdown {
+        position: relative;
+        display: block;
+        float: right;
+      }
+
+      .nav {
+        display: none;
+      }
+
+    .about div {
+        flex-direction: column;
+      }
+
+      .headings {
+        font-size: 3em;
+      }  
+
+      
 }
 
